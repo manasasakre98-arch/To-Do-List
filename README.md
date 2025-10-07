@@ -66,3 +66,6 @@ To-Do-List/
 
 ├── script.js # JavaScript functionality
 
+\ ## 📸 Demo
+![Demo Screenshot](Todolist.png)
+
