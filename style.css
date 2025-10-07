@@ -16,13 +16,21 @@ h1{
     border-radius:14px;
     margin:20px;
 }
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
 input {
-    width: 360px;
-    height: 45px;
+    width: 470px;
+    height: 60px;
     background-color: rgb(224, 244, 246);
-    text-align: center;
+    text-align: left;
     border-radius: 5px;
-    margin-left: 460px;
     padding: 16px;
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
@@ -31,9 +39,9 @@ input {
     outline: none;
 }
 button {
-    width: 57px;
-    height: 55px;
-    padding: 10px;
+    width: 56px;
+    height: 56px;
+    padding: 12px;
     margin-left: 30px;
     border-radius: 29px;
     background-color: rgb(234, 145, 221);
@@ -50,14 +58,115 @@ button:hover{
     box-shadow:3px 3px 7px grey;
     transform:scale(1.05);
 }
+h2{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+#list-container{
+    list-style: none;
+    padding:0;
+    margin: 0 auto;
+    max-width:600px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight:400;
+}
+#list-container li{
+    
+    text-align: center;
+    background-color: white;
+    margin: 8px auto;
+    padding:10px;
+    border-radius: 8px;
+    box-shadow:0px 2px 6px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.task-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px;
+    border-radius:8px;
+    background-color: white;
+    box-shadow: 0 px 2px 6px rgba(0,0,0,0.2);
+    margin-button:8px;
+}
+
+.task-content{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-grow:1;
+}
+.task-text{
+    font-size:18px;
+    font-weight:500;
+}
+.task-timer{
+    font-weight:bold;
+    color:#555;
+}
+
+.task-buttons button{
+    margin-left:6px;
+    padding:6px 10px;
+    font-size:14px;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+    background-color: rgb(234,145,221);
+    color:white;
+}
+.task-buttons button:hover{
+    background-color: rgba(237, 109, 220, 0.811);
+    transform:scale(1.05);
+}
+
 .time{
+    font-weight:bold;
+    color:#333;
+    margin-left:10px;
     text-align:center;
     margin-top:20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:16px;
+    font-size:24px;
     color:grey;
     font-weight:bold;
 }
 .time span{
     color:black;
+}
+@media (max-width: 600px) {
+  input {
+    width: 80%;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  button {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    margin-left: 0;
+  }
+
+  h1 {
+    font-size: 22px;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  #list-container li {
+    font-size: 18px;
+    padding: 8px;
+  }
 }
